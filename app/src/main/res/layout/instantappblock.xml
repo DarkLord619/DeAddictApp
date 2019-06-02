@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="401dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#c06c84"
+            android:fontFamily="@font/aladin"
+            android:paddingLeft="120dp"
+            android:paddingTop="5dp"
+            android:text="I Want to Block"
+
+            android:textColor="@color/design_default_color_background"
+            android:textSize="30sp" />
+
+        <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+            android:id="@+id/searchMultiSpinnerLimit"
+            android:layout_width="fill_parent"
+            android:layout_height="106dp"
+            android:layout_marginTop="40dp"
+            app:hintText="Select Bad Applicatations" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="406dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <com.ramotion.fluidslider.FluidSlider
+            android:id="@+id/fluidSlider1"
+            android:layout_width="380dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginEnd="16dp"
+            android:elevation="2dp"
+            app:bar_color="#6b76ff"
+            app:duration="@android:integer/config_mediumAnimTime"
+
+            app:end_text="0"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:size="small"
+            app:start_text="23"
+            tools:targetApi="lollipop" />
+
+        <TextView
+
+            android:id="@+id/textView22"
+            android:layout_width="395dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#f08a5d"
+            android:fontFamily="@font/aladin"
+            android:paddingLeft="130dp"
+            android:text="Pick Interval"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ramotion.fluidslider.FluidSlider
+            android:id="@+id/fluidSlider2"
+            android:layout_width="380dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:elevation="2dp"
+            app:bar_color="#6b76ff"
+            app:duration="@android:integer/config_mediumAnimTime"
+
+            app:end_text="0"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:size="small"
+            app:start_text="59"
+            tools:targetApi="lollipop" />
+
+        <!--<com.ramotion.fluidslider.FluidSlider-->
+        <!--android:id="@+id/fluidSlider2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:elevation="2dp"-->
+        <!--app:duration="@android:integer/config_mediumAnimTime"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:size="small"-->
+        <!--tools:targetApi="lollipop" />-->
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/limitdisbtn"
+        android:layout_width="171dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:background="#841818"
+        android:text="LIMIT DISTRACTION"
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+
+    <!--<com.ramotion.fluidslider.FluidSlider-->
+        <!--android:id="@+id/fluidSlider3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:elevation="2dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:size="small"-->
+        <!--app:duration="@android:integer/config_mediumAnimTime"-->
+        <!--tools:targetApi="lollipop" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

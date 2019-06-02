@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="172dp"
+
+        android:layout_height="241dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#ffff00"
+        fab:menu_colorPressed="#ffff8d"
+        fab:menu_colorRipple="#ffeb3b"
+        fab:menu_fab_hide_animation="@anim/scale_down"
+        fab:menu_fab_label=""
+        fab:menu_fab_show_animation="@anim/fab_scale_up"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/ic_phonelink_lock_black_24dp"
+        fab:menu_labels_colorNormal="#000000"
+        fab:menu_labels_colorPressed="#000000"
+        fab:menu_labels_colorRipple="#000000"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_style="@style/floatinglabelstyle"
+
+        fab:menu_labels_textColor="#fafafa"
+        fab:menu_labels_textSize="28sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            android:src="@drawable/ic_instantblock"
+
+            fab:fab_colorNormal="#ffff00"
+            fab:fab_colorPressed="#ffff8d"
+            fab:fab_colorRipple="#ffeb3b"
+            fab:fab_label="Instant Lock"
+            fab:fab_size="mini" />
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/menu_item2"-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_profileblock"-->
+            <!--fab:fab_colorNormal="#ffff00"-->
+            <!--fab:fab_colorPressed="#ffff8d"-->
+            <!--fab:fab_colorRipple="#ffeb3b"-->
+            <!--fab:fab_label="Profile Lock"-->
+            <!--fab:fab_size="mini" />-->
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="411dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textviewborder"
+        android:fontFamily="@font/abril_fatface"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="Click the below button to lock the device"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="440dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/adamina"
+        android:text="Device Administrator"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:paddingTop="5dp"
+        android:background="#0d47a1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="416dp"
+        android:layout_height="139dp"
+        android:background="#0091ea"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="20dp"
+        android:text="To uninstall on nougat and above , log the app out of device administrator either from settings or by clicking the below button"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/uninstallbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/red"
+        android:text="UNINSTALL"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
